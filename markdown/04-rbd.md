@@ -26,11 +26,8 @@
 
 
 ```
-# rbd unmap /dev/rbd0
-```
-
-
-```
+# date > /dev/rbd0
+# head -n 2 /dev/rbd0
 # rbd snap create rbd1@snap1
 # rbd ls --long
 ```
@@ -50,11 +47,37 @@
 
 
 ```
-# rbd snap unprotect test@snap1
-# rbd snap rm test@snap1
+# uname -a > /dev/rbd0
+# head -n2 /dev/rbd0
+# rbd snap rollback rbd1@snap1
+# head -n2 /dev/rbd0
+# rbd unmap /dev/rbd0
+```
+
+
+```
+# rbd snap unprotect rbd1@snap1
+# rbd snap rm rbd1@snap1
 ```
 
 
 ```
 # rbd rm rbd1
+```
+
+
+# rbd Namespaces
+
+```
+# rbd namespace ls
+# rbd namespace create --namespace training
+# rbd create --namespace training rbd2
+# rbd ls
+```
+
+
+```
+# rbd --namespace training ls
+# rados -p rbd ls
+# rados -p rbd --namespace training ls
 ```
