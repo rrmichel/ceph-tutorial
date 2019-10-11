@@ -81,3 +81,10 @@
 # rados -p rbd ls
 # rados -p rbd --namespace training ls
 ```
+
+
+```
+# rbd watch <image>
+# rbd sparsify <image>
+# rbd bench --io-type read|write|rw <image>
+```

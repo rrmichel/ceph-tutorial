@@ -2,6 +2,12 @@
 // https://github.com/hakimel/reveal.js#configuration
 Reveal.initialize({
 
+    width: "100%",
+	height: "100%",
+	margin: 0,
+	minScale: 1,
+	maxScale: 1,
+
     controls: false,
 
     progress: true,
@@ -9,7 +15,11 @@ Reveal.initialize({
     center: true,
     showNotes: false,
 
+    slideNumber: 'c/t',
+
     transition: 'fade',
+
+    navigationMode: 'linear',
 
 
     menu: {
