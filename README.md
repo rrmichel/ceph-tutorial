@@ -4,6 +4,9 @@ JBOE
 
 **j**ust a **b**unch **o**f **e**xercises
 
+
+https://rrmichel.github.io/ceph-tutorial
+
 * * *
 
 Note: If you need support [B1 Systems](mailto:info@b1-systems.de)
