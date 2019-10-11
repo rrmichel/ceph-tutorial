@@ -26,3 +26,9 @@
 # ceph tell osd.0 config set debug_osd 3/5
 # ceph daemon osd.0 config show | grep debug_osd
 ```
+
+# Recovery speed
+
+```
+# ceph tell 'osd.*' injectargs '--osd_max_backfills 16'
+```
