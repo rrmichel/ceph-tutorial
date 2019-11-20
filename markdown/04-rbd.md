@@ -1,7 +1,7 @@
 # RBD
 
 ```
-# rbd create --size rbd1
+# rbd create --size <size> rbd1
 # rbd info rbd1
 # rbd status rbd1
 ```
