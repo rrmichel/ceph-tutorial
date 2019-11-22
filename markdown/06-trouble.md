@@ -22,6 +22,11 @@
 
 
 ```
+# ceph osd purge || destroy osd.<id>
+```
+
+
+```
 # ceph config set osd debug_osd "0/5"
 # ceph tell osd.0 config set debug_osd 3/5
 # ceph daemon osd.0 config show | grep debug_osd
