@@ -1,0 +1,6 @@
+Slow OPS mon:
+    ceph daemon mon.# ops
+
+Slow OSD heartbeats on front (longest: xxx.yyy ms)
+Slow OSD heartbeats on back (longest: xxx.yyy ms)
+    ceph daemon mgr.# dump_osd_network
